@@ -106,7 +106,43 @@ for (const key in obj) {
         console.log(char);
     }
 
+    for (const key in obj) {
+        if (obj.hasOwnProperty.call(obj, key)) {
+            const element = obj[key];
+        
+        }
+    
+}
 
 
+// While loop start
 
- 
+console.log("While loop");
+let i = 0;
+while (i < 5) {
+    console.log("The value of i is: " + i);
+    i++;
+}
+
+let k = 0;
+while (k<=5) {
+    console.log("The value of k is: " + k);
+    k++;
+}
+
+// do while loop start
+console.log("Do while loop");
+let j = 0;
+do {
+    console.log("The value of j is: " + j);
+    j++;
+} while (j < 5);
+
+console.log(" another example of Do while loop");
+let l = 0;
+do{
+    console.log("The value of l is: " + l);
+    l++;
+    
+} while (l <= 5);
+
