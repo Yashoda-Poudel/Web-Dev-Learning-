@@ -146,3 +146,66 @@ do{
     
 } while (l <= 5);
 
+
+// Javascript functions 
+console.log("Javascript functions ");
+console.log("This is a simple function that takes a name as an argument and prints a greeting message.");
+function greet(name) {
+    console.log("Hello " + name + ", welcome to the world of JavaScript!");
+    console.log(name + " is a great name!");
+    console.log("This is a simple function that takes a name as an argument and prints a greeting message.");
+}
+greet("Yashoda");
+greet("John");
+greet("Alice");
+
+
+// add using function 
+
+function sum(a ,b){
+    console.log("The sum of " + a + " and " + b + " is: " + (a+b));
+}
+sum(5, 10);
+sum(15, 25);
+
+// subtract using function
+function subtract(a, b) {
+    console.log("The difference between " + a + " and " + b + " is: " + (a - b));
+}
+subtract(10, 5);
+
+// multiply using function
+function multiply(a, b) {
+    console.log("The product of " + a + " and " + b + " is: " + (a * b));
+}
+multiply(5, 10);
+multiply(15, 25);
+
+// divide using function
+function divide(a, b) {
+    console.log("The quotient of " + a + " and " + b + " is: " + (a / b));
+}
+divide(10, 5);
+divide(25, 5);
+
+function sum(a, b) {
+    return a + b
+}
+
+result = (3,5)
+result1=(2,3)
+result2=(6,4)
+console.log("The sum of these numbers is:",result )
+console.log("The sum of these numbers is:",result1 )
+console.log("The sum of these numbers is:",result2 )
+
+//
+const func1 = (x) => {
+    console.log("I am an arrow function",x)
+
+}
+func1(22);
+func1(12);
+func1(2);
+//
+ 
