@@ -229,6 +229,52 @@ console.log(t.length)
 console.log(t.toLowerCase())
 console.log(t.toUpperCase())
 console.log(t.slice(1))
+// Now starting array 
+
+let arr =[ 1,2,3,4,7]
+console.log(arr)
+console.log(arr.length)
+ // ararys are mutable and strings are not 
+ console.log(arr[0])
+ console.log(arr[4])
+ console.log(arr[1])
+ console.log(arr[2])
+ arr[4]=5;
+ console.log(arr[4])
+
+
+//array to string
+ console.log(arr.toString())
+
+ // join meathod
+ console.log(arr.join("and"))
+
+ //pop
+ arr.pop();
+console.log(arr);
+
+ //push
+ arr.push(8);
+console.log(arr);
+
+ //unshift
+ arr.unshift(0);
+console.log(arr);
+
+ // shift 
+ arr.shift();
+ console.log(arr);
+
+ //indexof
+ let m=[10,20,30,200,5000];
+ console.log(m.indexOf(5000));
+
+ //include
+ let e=[10,20,30,200,5000];
+ console.log(e.includes(20));
+ console.log(e.includes(1000));
+
+ 
 
 
 
