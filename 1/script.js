@@ -207,5 +207,28 @@ const func1 = (x) => {
 func1(22);
 func1(12);
 func1(2);
-//
- 
+
+
+// strings
+console.log("This is strings ... starting...")
+let s= "Sita";
+console.log(s[0]);
+console.log(s[1]);
+console.log(s[2]);
+console.log(s[3]);
+//console.log(s[5]);
+
+console.log(a.length)
+let real_name ="Sita";
+let friend ="Rohan";
+console.log(" His name is " + real_name + " and his friends name is " + friend)
+
+console.log("Meathods and  Properties")
+let t="Water";
+console.log(t.length)
+console.log(t.toLowerCase())
+console.log(t.toUpperCase())
+console.log(t.slice(1))
+
+
+
