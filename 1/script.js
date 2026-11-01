@@ -1,10 +1,10 @@
-console.log("Starting the script");
-var a = 10;
-var b = 20;
-console.log(a + b);
-let x= "Hello";
+//console.log("Starting the script");
+//var a = 10;
+//var b = 20;
+//console.log(a + b);
+/*let x= "Hello";
 let y= 22;
-let z=3.55;
+let z=3.55; 
 const p=true;
 let q=undefined;
 let r=null;
@@ -272,9 +272,60 @@ console.log(arr);
  //include
  let e=[10,20,30,200,5000];
  console.log(e.includes(20));
- console.log(e.includes(1000));
-
+ console.log(e.includes(1000));*/
  
+
+ let a =[1,2,4,57,76];
+ for (let index = 0; index <a.length;index++){
+    const element =a[index];
+    console.log(element)
+ }
+
+ a.forEach((value, index,arr)=>{
+     console.log(value, index, arr)
+ })
+
+ let obj ={
+    a:1,
+    b:2,
+    c:3,
+    d:4
+ }
+//forin 
+ for (const key in obj) {
+    if (!Object.hasOwn(obj, key)) continue;
+    
+    const element = obj[key];
+    console.log(key,element)
+    console.log(element)
+    
+    
+ }
+//map
+
+let arr=[1,3,5,7,11];
+//let newArr =[]
+//for (let index = 0; index < arr.length; index++) {
+    //const element = arr[index];
+    //newArr.push(element**2)
+   // 
+//}
+//c
+ // this is map
+ let newArr =arr.map((e)=>{
+    return e**2
+ })
+ console.log(newArr)
+
+ //filter
+ const greaterThanSeven =(e)=>{
+    if(e>7){
+        return true
+    }
+    return false
+ }
+  console.log(newArr.filter(greaterThanSeven))
+
 
 
 
