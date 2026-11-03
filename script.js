@@ -3,6 +3,7 @@
 //var b = 20;
 //console.log(a + b);
 /*let x= "Hello";
+
 let y= 22;
 let z=3.55; 
 const p=true;
@@ -329,3 +330,16 @@ let arr=[1,3,5,7,11];
 
 
 
+  // Document Object Model (DOM) in JavaScript
+  console.log("Document Object Model (DOM) in JavaScript");
+
+    console.log("Hii I am Yashoda ");
+
+    let Yashoda = Document.getElementById("white");
+console.log (Yashoda);
+yashoda.style[2].backgroundColor="red";  
+
+
+
+
+ 

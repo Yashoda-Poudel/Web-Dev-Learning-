@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>css </title>
+    <title>Document</title>
     <style>
         .box {
             width: 200px;
@@ -36,10 +36,19 @@
     </style>
 </head>
 <body>
+    <div class="Container">
+        <h1>Document Object Model (DOM) in JavaScript</h1>  
     <div class="box box1"> I am a box</div>
-    <div class="box box2"> I am also a box</div>
+    <div id="white" class="box box2"> I am also a box</div>
     <div class="box box3"> I am yet another box</div>
     <div class="box box4"> I am the last box</div>
+    </div>  
+<script>
+document.title="Learning document Object Model"
+console.log (document.title)
+console.log(document.body)
+document.body.style.backgroundColor="lightblue";</script>
+   
 <script src="script.js"></script>
 </body>
 </html> 
