@@ -331,14 +331,76 @@ let arr=[1,3,5,7,11];
 
 
   // Document Object Model (DOM) in JavaScript
-  console.log("Document Object Model (DOM) in JavaScript");
+  //console.log("Document Object Model (DOM) in JavaScript");
 
-    console.log("Hii I am Yashoda ");
+    //console.log("Hii I am Yashoda ");
 
-    let Yashoda = Document.getElementById("white");
-console.log (Yashoda);
-yashoda.style[2].backgroundColor="red";  
+   // let Yashoda = Document.getElementById("white");
+//console.log (Yashoda);
+//yashoda.style[2].backgroundColor="red";   
+//document.getElementById("white").style.backgroundColor="red";
 
+//querySelector
+//document.querySelector("#white").style.backgroundColor="black";
+//document.querySelector(".box").style.backgroundColor="blue";
+
+
+
+//Inserting and Removing Elements using java script
+
+let button = document.getElementById("btn1");
+button.addEventListener("click", () => {
+    alert("Sorry, Click another button for the message!!!");
+})
+
+button.addEventListener("click", () => {
+    document.getElementById("box1").innerHTML = "I am a not a box";})
+
+    let button2 = document.getElementById("btn2");
+    button2.addEventListener("click", () => {
+        alert("Sorry, Click another button for the message!!!");
+    })
+    document.getElementById("btn2").addEventListener("click", () => {
+        document.getElementById("box2").innerHTML = "I am also not a box. Click the another button  to see the message.";
+    }
+    )
+
+    let button3 = document.getElementById("btn3");
+    button3.addEventListener("click", () => {
+        alert("A Message from Yashoda: The best way of learning is to maintain consistency.");
+    })
+     document.getElementById("btn3").addEventListener("click", () => {
+        document.getElementById("box3").innerHTML = "Yeah!! You have clicked the right button. Now you can see the message.";})
+
+
+        let button4 = document.getElementById("btn4");
+    button4.addEventListener("click", () => {
+        alert("Sorry!! Wrong box.");
+    })
+     document.getElementById("btn4").addEventListener("click", () => {
+        document.getElementById("box4").innerHTML = "I am not the right box.";})
+
+
+
+        // list of all mouse events
+        //in developer.mozilla.org, you can find the list of all mouse events in JavaScript. Some of the commonly used mouse events are:
+
+        
+        button.addEventListener("mouseover", () => {
+            document.getElementById("box1").innerHTML = "You are hovering over the button.";
+        })
+
+
+         document.addEventListener("keydown", (e) => {
+            console.log("You pressed a key: " + e.key);
+
+
+        })
+
+
+        // event bubbling
+
+        div.container
 
 
 
