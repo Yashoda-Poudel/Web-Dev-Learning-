@@ -386,7 +386,7 @@ button.addEventListener("click", () => {
         //in developer.mozilla.org, you can find the list of all mouse events in JavaScript. Some of the commonly used mouse events are:
 
         
-        button.addEventListener("mouseover", () => {
+        /*button.addEventListener("mouseover", () => {
             document.getElementById("box1").innerHTML = "You are hovering over the button.";
         })
 
@@ -396,12 +396,148 @@ button.addEventListener("click", () => {
 
 
         })
-
+*/
 
         // event bubbling
 
-        div.container
+       // document.getElementById("container ").addEventListener("click", () => {
+           // alert("You clicked on the parent element.");
+        //});
+
+       // document.getElementById("box 1").addEventListener("click", (e) => {
+            //alert("You clicked on the child element.");
+          //  e.stopPropagation();
+       // });
+        
+
+        // Set Interval and set timee out
+
+        
+
+
+        // Callbacks and Promises
+
+
+ /*console.log("Starting the script");
+ console.log("This is a simple example of a callback function.");
+
+ setTimeout(() => {
+    console.log("This is a callback function that will be executed after 2 seconds.")
+ }, 2000);
+
+ console.log("This is a simple example of a promise.");
 
 
 
- 
+ const callback = (arg) => {
+    console.log(arg)
+ }
+ const loadScript = (src, callback) => {
+    let sc = document.createElement("script");
+    sc.src = src;
+    sc.onload = callback("Yashoda");
+    document.head.append(sc);
+ }
+ loadScript("https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js", callback);*/
+
+ //promises
+ let promise1 = new Promise((resolve, reject) => {
+    let success = true;
+
+    if (success) {
+        resolve("Task completed!");
+    } else {
+        reject("Task failed!");
+    }
+});
+
+console.log(promise1);
+
+//Promise 
+let promise2 = new Promise((resolve, reject) => {
+    resolve("Data received successfully!");
+});
+
+promise2.then((result) => {
+    console.log(result);
+});
+
+let promise3 = new Promise((resolve, reject) => {
+    reject("Something went wrong!");
+});
+
+promise3.catch((error) => {
+    console.log(error);
+});
+
+
+let promise = new Promise((resolve, reject) => {
+    resolve("Login successful!");
+});
+
+promise.then((result) => {
+        console.log(result);
+    })
+    .catch((error) => {
+        console.log(error);
+    })
+    .finally(() => {
+        console.log("Login process finished.");
+    });
+
+//promise chaining
+let promise4 = new Promise((resolve) => {
+    resolve(10);
+});
+
+promise4
+    .then((num) => {
+        console.log(num);
+        return num * 2;
+    })
+    .then((num) => {
+        console.log(num);
+        return num + 5;
+    })
+    .then((num) => {
+        console.log(num);
+    });
+
+    // Promise ressolve
+    let promise5 = Promise.resolve("Welcome to JavaScript!");
+
+promise5.then((result) => {
+    console.log(result);
+});
+
+let promise6 = Promise.reject("Access denied!");
+
+promise6.catch((error) => {
+    console.log(error);
+});
+
+let p1 = Promise.resolve("HTML");
+let p2 = Promise.resolve("CSS");
+let p3 = Promise.resolve("JavaScript");
+
+Promise.all([p1, p2, p3])
+    .then((result) => {
+        console.log(result);
+    })
+    .catch((error) => {
+        console.log(error);
+    });
+
+    // Promise.race
+    let p4 = new Promise((resolve) => {
+    setTimeout(() => resolve("First task"), 2000);
+});
+
+let p5 = new Promise((resolve) => {
+    setTimeout(() => resolve("Second task"), 1000);
+});
+
+Promise.race([p4, p5])
+    .then((result) => {
+        console.log(result);
+    });
